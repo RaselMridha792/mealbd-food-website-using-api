@@ -99,13 +99,15 @@ const openModal=(idMeal)=>{
                 <div><h1 class="text-2xl font-bold py-3">${strMeal}</h1></div>
                 <hr/ class="pb-5">
                 <div class="w-full"><img class="w-8/12 mx-auto rounded-xl" src="${strMealThumb}"/></div>
-                <div class="flex flex-col gap-3 py-5 px-5">
+                <div class="flex flex-col gap-3 py-5 justify-center">
                     <p class="text-gray-500"><span class="font-bold text-black">Category :</span>${strCategory?strCategory:"Not Available"}</p>
                     <p class="text-gray-500"><span class="font-bold text-black">Area :</span>${strArea?strArea:"Not Available"}</p>
                     <p class="text-gray-500"><span class="font-bold text-black">Instructions :</span>${strInstruction}
                         <button class="link text-blue-600">...Learn More
                     </button></p>
-                    <p class="text-gray-500"><span class="font-bold text-black">YouTube :</span>${strYoutube?strYoutube:"Not Available"}</p>
+                    <div class="text-gray-500"><span class="font-bold text-black">YouTube :</span>
+                        <a href="${strYoutube}">Watch On Youtube</a>
+                    </div>
                     <div class="flex justify-end">
                         <div class="modal-action">
                             <form method="dialog">
