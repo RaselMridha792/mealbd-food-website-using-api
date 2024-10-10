@@ -106,22 +106,23 @@
 
     <main class="max-w-screen-2xl mx-auto">
       <section class="md:my-28 my-10 px-5">
-        <div class="flex items-center justify-center my-5">
-          <h1 class="font-bold text-4xl">Your Favourite Food</h1>
+        <div class="flex items-center justify-center my-5 flex-col">
+          <h1 class="font-bold text-4xl uppercase">Your Favourite Food</h1>
+          <button class="join py-5" onclick="loadPrevius()"><img class="btn btn-warning" src="https://img.icons8.com/?size=100&id=87017&format=png&color=000000" alt=""></button>
         </div>
         <!-- card section start here  -->
         <div id="card-container" class="grid lg:grid-cols-2 gap-5"></div>
+        <div id="card-parent" class="grid lg:grid-cols-4 md:grid-cols-2 gap-5">
+
+        </div>
       </section>
 
       <!-- modal -->
       <!-- Open the modal using ID.showModal() method -->
       <dialog id="foodModal" class="modal">
-        <div id="modal-box" class="modal-box">
-          <p class="py-4">Press ESC key or click outside to close</p>
+        <div id="modal-box" class="modal-box w-10/12 max-w-2xl bg-amber-50">
+          
         </div>
-        <form method="dialog" class="modal-backdrop">
-          <button>close</button>
-        </form>
       </dialog>
     </main>
     <footer class="bg-amber-50 py-10">
